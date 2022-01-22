@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,9 +29,19 @@ namespace Counter
             this.InitializeComponent();
         }
 
-        private void _count_Click(object sender, RoutedEventArgs e)
+        private async void _count_Click(object sender, RoutedEventArgs e)
         {
-            _count.Content = Convert.ToInt32(_count.Content) + 1;
+            if(Convert.ToInt32(Limit.Text) != Convert.ToInt32(_count.Content)){
+                _count.Content = Convert.ToInt32(_count.Content) + 1;
+                Random myObject = new Random();
+                int min = 0;
+                int max = 255;
+                _bg_color.Color = Windows.UI.Color.FromArgb(255, (byte)myObject.Next(min, max), (byte)myObject.Next(min, max), (byte)myObject.Next(min, max));
+            }
+            else{
+                var dialog = new MessageDialog("Done!");
+                await dialog.ShowAsync();
+            }
         }
     }
 }
