@@ -24,6 +24,7 @@ namespace Counter
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        DateTime dateTime_time_started = DateTime.Now;
         public MainPage()
         {
             this.InitializeComponent();
@@ -32,15 +33,17 @@ namespace Counter
         private async void _count_Click(object sender, RoutedEventArgs e)
         {
             if(Convert.ToInt32(Limit.Text) != Convert.ToInt32(_count.Content)){
+                TextBlock_Time_Elapsed.Text = "Time Elapsed = " + (DateTime.Now - dateTime_time_started).ToString();
                 _count.Content = Convert.ToInt32(_count.Content) + 1;
                 Random myObject = new Random();
                 int min = 0;
                 int max = 255;
                 _bg_color.Color = Windows.UI.Color.FromArgb(255, (byte)myObject.Next(min, max), (byte)myObject.Next(min, max), (byte)myObject.Next(min, max));
-            }
-            else{
-                var dialog = new MessageDialog("Done!");
-                await dialog.ShowAsync();
+                if (Convert.ToInt32(Limit.Text) == Convert.ToInt32(_count.Content))
+                {
+                    var dialog = new MessageDialog("Done!");
+                    await dialog.ShowAsync();
+                }
             }
         }
     }
