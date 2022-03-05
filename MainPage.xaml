@@ -12,9 +12,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Grid>
+        <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="1*"/>
@@ -33,11 +34,17 @@
         </Grid>
         <TextBlock Grid.Row="1"
                    x:Name="TextBlock_Time_Elapsed"
-                   Text="Time Elapsed = 0.0 Sec"
+                   Text="Time Elapsed = 00:00:00"
                    FontSize="50"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Left"/>
-        <Button Grid.Row="2"
+        <TextBlock Grid.Row="2"
+                   x:Name="TextBlock_Average_Time"
+                   Text="Average Time = 00:00:00"
+                   FontSize="50"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"/>
+        <Button Grid.Row="3"
                 x:Name="_count"
                 VerticalAlignment="Stretch"
                 HorizontalAlignment="Stretch"

@@ -12,9 +12,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Grid>
+        <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="1*"/>
@@ -24,7 +25,7 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontSize="50"/>
-            <TextBox x:ConnectionId='5' x:Name="Limit"
+            <TextBox x:ConnectionId='6' x:Name="Limit"
                      Grid.Column="1"
                      FontSize="50"
                      VerticalAlignment="Stretch"
@@ -33,11 +34,17 @@
         </Grid>
         <TextBlock x:ConnectionId='2' Grid.Row="1"
                    x:Name="TextBlock_Time_Elapsed"
-                   Text="Time Elapsed = 0.0 Sec"
+                   Text="Time Elapsed = 00:00:00"
                    FontSize="50"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Left"/>
-        <Button x:ConnectionId='3' Grid.Row="2"
+        <TextBlock x:ConnectionId='3' Grid.Row="2"
+                   x:Name="TextBlock_Average_Time"
+                   Text="Average Time = 00:00:00"
+                   FontSize="50"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"/>
+        <Button x:ConnectionId='4' Grid.Row="3"
                 x:Name="_count"
                 VerticalAlignment="Stretch"
                 HorizontalAlignment="Stretch"
@@ -47,7 +54,7 @@
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
-                    <GradientStop x:ConnectionId='4' x:Name="_bg_color"
+                    <GradientStop x:ConnectionId='5' x:Name="_bg_color"
                                   Color="#FF43862B" Offset="1"/>
                 </LinearGradientBrush>
             </Button.Background>

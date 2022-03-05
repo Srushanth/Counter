@@ -32,9 +32,16 @@ namespace Counter
 
         private async void _count_Click(object sender, RoutedEventArgs e)
         {
-            if(Convert.ToInt32(Limit.Text) != Convert.ToInt32(_count.Content)){
-                TextBlock_Time_Elapsed.Text = "Time Elapsed = " + (DateTime.Now - dateTime_time_started).ToString();
+            if(Convert.ToInt32(Limit.Text) != Convert.ToInt32(_count.Content))
+            {
                 _count.Content = Convert.ToInt32(_count.Content) + 1;
+                TextBlock_Time_Elapsed.Text = "Time Elapsed = " + (DateTime.Now - dateTime_time_started).ToString();
+                TextBlock_Average_Time.Text = "Average Time = " + TimeSpan.FromSeconds(
+                    (
+                    (Convert.ToDateTime(TextBlock_Time_Elapsed.Text.Replace("Time Elapsed = ", "")).Hour*60*60) + 
+                    (Convert.ToDateTime(TextBlock_Time_Elapsed.Text.Replace("Time Elapsed = ", "")).Minute*60) + 
+                    (Convert.ToDateTime(TextBlock_Time_Elapsed.Text.Replace("Time Elapsed = ", "")).Second)
+                    ) / Convert.ToInt32(_count.Content)).ToString();
                 Random myObject = new Random();
                 int min = 0;
                 int max = 255;
