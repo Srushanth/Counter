@@ -1,0 +1,15 @@
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\bin\Debug\netstandard2.0\Counter App.deps.json
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\bin\Debug\netstandard2.0\Counter App.dll
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\bin\Debug\netstandard2.0\Counter App.pdb
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\Counter App.csproj.AssemblyReference.cache
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\Counter App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\Counter App.AssemblyInfoInputs.cache
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\Counter App.AssemblyInfo.cs
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\Counter App.csproj.CoreCompileInputs.cache
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\Counter App.dll
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\refint\Counter App.dll
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\Counter App.pdb
+C:\Users\Srush\OneDrive\Documents\GitHub\Counter\Counter App\Counter App\obj\Debug\netstandard2.0\ref\Counter App.dll
