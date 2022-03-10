@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "WPoidS3z+CJlDI7pagxZmoowhLfjH5ZN+0hHLgfyZmQa2IQR8EpUZcUoJk4SprFobzLfxGdXIjU6JpTo3Cz1RA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Srush\\OneDrive\\Documents\\GitHub\\Counter\\Counter App\\Counter App\\Counter App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Srush\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Srush\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Srush\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Srush\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Srush\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
