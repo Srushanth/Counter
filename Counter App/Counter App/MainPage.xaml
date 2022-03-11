@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter_App.MainPage">
+
+    <StackLayout>
+        <Entry x:Name="Count_Limit"
+               Placeholder="Count Limit"
+               HorizontalTextAlignment="Center"
+               Keyboard="Numeric"/>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label x:Name="Count"
+                   Text="0" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+        </Frame>
+        <Label Text="Srushanth Baride" FontSize="Title" Padding="30,10,30,10"/>
+        <Button x:Name="Increment"
+                Text="Add +1"
+                Margin="15"
+                BackgroundColor="#2196F3"
+                Clicked="Increment_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
