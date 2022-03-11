@@ -37,5 +37,10 @@ namespace Counter_App
                 await DisplayAlert("Alert", "You have reached the target!", "OK");
             }
         }
+
+        private void Reset_Count_Clicked(object sender, EventArgs e)
+        {
+            Count.Text = "0";
+        }
     }
 }

@@ -21,6 +21,17 @@
                 Margin="15"
                 BackgroundColor="#2196F3"
                 Clicked="Increment_Clicked"/>
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Reset_Count"
+                    Grid.Row="1"
+                    BackgroundColor="#2196F3"
+                    Text="Reset"
+                    Clicked="Reset_Count_Clicked"/>
+        </Grid>
     </StackLayout>
 
 </ContentPage>
