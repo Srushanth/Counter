@@ -8,6 +8,7 @@
                Placeholder="Count Limit"
                HorizontalTextAlignment="Center"
                Keyboard="Numeric"/>
+
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label x:Name="Count"
                    Text="0" 
@@ -15,6 +16,7 @@
                    TextColor="White" 
                    FontSize="36"/>
         </Frame>
+
         <Button x:Name="Increment"
                 Text="Add +1"
                 BackgroundColor="#2196F3"
@@ -28,5 +30,4 @@
                 Text="Reset"
                 Clicked="Reset_Count_Clicked"/>
     </StackLayout>
-
 </ContentPage>
