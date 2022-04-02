@@ -15,23 +15,18 @@
                    TextColor="White" 
                    FontSize="36"/>
         </Frame>
-        <Label Text="Srushanth Baride" FontSize="Title" Padding="30,10,30,10"/>
         <Button x:Name="Increment"
                 Text="Add +1"
-                Margin="15"
                 BackgroundColor="#2196F3"
+                VerticalOptions="FillAndExpand"
                 Clicked="Increment_Clicked"/>
-        <Grid VerticalOptions="FillAndExpand">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="auto"/>
-            </Grid.RowDefinitions>
-            <Button x:Name="Reset_Count"
-                    Grid.Row="1"
-                    BackgroundColor="#2196F3"
-                    Text="Reset"
-                    Clicked="Reset_Count_Clicked"/>
-        </Grid>
+
+        <Button x:Name="Reset_Count"
+                VerticalOptions="End"
+                Grid.Row="1"
+                BackgroundColor="#2196F3"
+                Text="Reset"
+                Clicked="Reset_Count_Clicked"/>
     </StackLayout>
 
 </ContentPage>

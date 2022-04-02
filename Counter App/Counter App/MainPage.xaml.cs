@@ -41,6 +41,7 @@ namespace Counter_App
         private void Reset_Count_Clicked(object sender, EventArgs e)
         {
             Count.Text = "0";
+            //Count_Limit.Text = "";
         }
     }
 }
